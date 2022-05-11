@@ -1,2 +1,16 @@
-<button (click)="change()">git push</button>
+<div>
+  <img [src]="imgUrl" alt="user-img" />
+</div>
+
+<div>
+  <button (click)="incrementCounter()">Click</button>
+  <button (click)="change()">git push</button>
+  <p>{{ count }}</p>
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="name" />
+  <p>Welcome {{ name }}</p>
+</div>
+
 <app-item-detail [item]="data"></app-item-detail>
