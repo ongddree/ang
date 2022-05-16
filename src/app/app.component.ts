@@ -10,6 +10,18 @@ export class AppComponent {
   imgUrl = 'https://avatars.githubusercontent.com/u/93420227?v=4';
   count = 0;
   name!: string;
+  private _customerName: string = '';
+
+  get customerName(): string {
+    return this._customerName;
+  }
+
+  set customerName(value: string) {
+    this._customerName = value;
+    if (value === 'holybang') {
+      alert('hello holybang');
+    }
+  }
 
   incrementCommit() {
     this.commit = this.commit + '🌱';

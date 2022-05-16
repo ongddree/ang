@@ -13,4 +13,9 @@
   <p>Welcome {{ name }}</p>
 </div>
 
+<div>
+  <input type="text" [(ngModel)]="customerName" />
+  <p>Welcome {{ customerName }}</p>
+</div>
+
 <app-item-detail [commit]="commit"></app-item-detail>
