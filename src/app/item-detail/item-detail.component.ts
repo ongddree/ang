@@ -14,7 +14,7 @@ import {
 export class ItemDetailComponent implements OnChanges {
   constructor() {}
 
-  @Input() item = '';
+  @Input() commit = '';
 
   ngOnChanges(changes: SimpleChanges) {
     console.log(changes);
