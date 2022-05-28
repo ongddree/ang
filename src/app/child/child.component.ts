@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./child.component.scss'],
 })
 export class ChildComponent implements OnInit {
-  @Input() loggedIn: boolean;
+  @Input('loggedIn') loginFlag: boolean;
 
   constructor() {}
 
